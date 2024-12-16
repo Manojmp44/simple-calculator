@@ -60,9 +60,64 @@ button:active{
 }
 
 .operator-btn:hover{
+
     background-color:hsl(35,100%,65%);
 }
 
 .operator-btn:active{
     background-color:hsl(35,100%,70%);
 }
+
+@media (max-width: 768px) {
+    /* For Tablet and smaller screens */
+    
+    #calculator {
+        width: 90%; 
+        max-width: 400px;
+    }
+
+    #display {
+        font-size: 4rem; 
+        padding: 15px;
+    }
+
+    #keys {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 5px; 
+        padding: 20px;
+    }
+
+    button {
+        width: 80px; 
+        height: 80px;
+        font-size: 2.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    /* For Mobile screens */
+    
+    #calculator {
+        width: 95%; 
+        max-width: 350px;
+    }
+
+    #display {
+        font-size: 3.5rem; 
+        padding: 10px;
+    }
+
+    #keys {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 3px; 
+        padding: 15px;
+    }
+
+    button {
+        width: 70px; 
+        height: 70px;
+        font-size: 2rem; 
+    }
+}
+
+
